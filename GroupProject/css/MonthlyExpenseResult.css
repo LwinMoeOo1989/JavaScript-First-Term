@@ -1,0 +1,83 @@
+.ds_container {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 100px 10px;
+}
+body{
+    margin: 0 auto;
+}
+
+
+main {
+    background: url(../images/back2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+select#graphType {
+    padding: 6px;
+    background: #2D3E50;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 4px;
+}
+
+button#ds_updateGraph {
+    padding: 6px;
+    background: #6e90b4;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 4px;
+}
+
+div#ds_top_head {
+    margin-bottom: 21px;
+}
+
+canvas#ds_expense_charts {
+    display: block;
+    box-sizing: border-box;
+    height: 531px;
+    width: 1063px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 1px 6px 9px black;
+    border: 4px solid #093534;
+}
+
+footer {
+    font-weight:bold;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    background: #c2d3dd;
+    border-top: 1px solid #ccc;
+    width: 100%;
+    text-align: center;
+    color: #2D3E50;
+}
+
+#ds_zoom_image{
+    width: 71%;
+        margin: 0 auto;
+    display: block;
+    text-align: center;
+    transition: transform 0.5s ease-in-out;
+    
+    }
+    
+    #ds_map {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    
+    .ds_container {
+        text-align: center;
+    }

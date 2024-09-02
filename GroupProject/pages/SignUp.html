@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../resource/images/Logo_3.png">
+    <link rel="stylesheet" href="../css/Global.css">
+    <link rel="stylesheet" href="../css/SignUp.css">
+
+</head>
+<body>
+   
+        <header>
+            <img id="logo" src="../resource/images/Logo_3.png" alt="logo">
+            <h1>Budget Buddy</h1>
+            <nav>
+                <ul class="nav">
+                    <li><a href="./Home.html">Home</a></li>
+                    <li><a href="./About.html">About Us</a></li>
+                    <li><a href="./Contact_Us.html">Contact us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+        <form id="SignUp">
+            <div id="form_heading">
+            <h2>Sign Up Form</h2>
+            </div>
+            <fieldset>
+                <legend>Basic Information</legend>
+            <div class="FormField">
+                <label for="username">User Name:</label>
+                <input type="text" id="username" name="username" required autocomplete="off">
+            </div>
+            <div class="FormField">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required autocomplete="off">
+            </div>
+            <div class="FormField">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required autocomplete="off">
+            </div>
+            <div class="FormField">
+                <label for="confirm_password">Re-type Password:</label>
+                <input type="password" id="confirm_password" name="confirm_password" required autocomplete="off">
+            </div>          
+        </fieldset>
+        <fieldset>
+            <legend>More Information</legend>
+            <div class="FormField">
+                <label for="contact_number">Contact Number:</label>
+                <input type="tel" id="contact_number" name="contact_number" required autocomplete="off">
+            </div>
+            <div class="FormField">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required autocomplete="off">
+            </div>
+            <div class="FormField">
+                <label for="SecurityQuestion">Security Question:</label>
+                <select id="SecurityQuestion" name="SecurityQuestion" >
+                    <option value="">--Select One--</option>
+                    <option value="WhatisYourFatherName">What is Your Father Name</option>
+                    <option value="WhatisYourMotherName">What is Your Mother Name</option>
+                    <option value="WhatisYourLastName">What is Your Last Name</option>
+                    <option value="WhatisYourPetName">What is Your Pet Name</option>
+                    <option value="WhatisYourSchoolName">What is Your School Name</option>
+                    <option value="WhatisYourDegree">What is Your Degree</option>
+                </select>
+            </div>
+            <div class="FormField">
+                <label for="securityAnswer">Answer:</label>
+                <input type="text" id="securityAnswer" name="securityAnswer" autocomplete="off">
+            </div>
+            <div class="FormField">
+                <label for="pinInput">PIN:</label>
+                <input type="number" id="pinInput" name="pinInput" autocomplete="off">
+            </div>
+           
+            <div class="FormField">
+                <label for="gender">Gender:</label>
+                <label>
+                    <input type="radio" name="gender" value="male">
+                    Male
+                </label><br>
+                <label>
+                    <input type="radio" name="gender" value="female">
+                    Female
+                </label><br>
+                 
+            </fieldset>
+
+            </div>
+                <div class="buttonfield">            
+                <button type="submit" id="SignUp" class="hover-opacity">Sign Up</button>
+                <button type="reset" id="Clear" class="hover-opacity">Clear</button>
+            </div>
+        </form>
+    </main>
+    <footer>     <small>&copy; "Darshankumar Mehta/9007018 &nbsp;&nbsp;&nbsp;&nbsp;</small></footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="../js/SignUp.js"></script>
+</body>
+</html>

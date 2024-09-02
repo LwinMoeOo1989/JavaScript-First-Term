@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register User</title>
+      <link rel="stylesheet" href="../css/Register.css">
+</head>
+<body>
+        <header role="banner">
+        <img src="../images/Logo.png" alt="Idea Point" id="top"><h1>IDEA POINT</h1> 
+        </header>
+        <main>
+            <form id="register">
+                <h2>Register New User</h2>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="username">Username:</label>
+                        </td>
+                        <td>
+                            <input type="text" id="username" name="username" required autocomplete="off" autofocus>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="Email">Email:</label>
+                        </td>
+                        <td>
+                            <input type="text" id="Email" name="Email" required autocomplete="off">
+                            
+                        </td>
+                    </tr>
+                     <tr>
+                        <td>
+                            <label for="PhoneNo">Phone Number:</label>
+                        </td>
+                        <td>
+                            <input type="text" id="PhoneNo" name="PhoneNo" required autocomplete="off"
+                             placeholder="999-999-9999">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="DOB">DOB:</label>
+                        </td>
+                        <td>
+                            <input type="date" id="DOB" name="DOB" required autocomplete="off">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="gender">Gender:</label>
+                        </td>
+                        <td>
+                            <div class="radio-container">
+                            <label for="male">
+                                <input type="radio" id="male" name="gender" value="Male" required> Male
+                            </label>
+                            <label for="female">
+                                <input type="radio" id="female" name="gender" value="Female"> Female
+                            </label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="password">Password:</label>
+                        </td>
+                        <td>    
+                            <div class="password-container">
+                                <input type="text" id="password" name="password" required >
+                                <button type="button" id="generatePassword" class="hover-opacity">Auto Generate</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="confirmpassword">Confirm Password:</label>
+                        </td>
+                        <td>   
+                            <input type="text" id="confirmpassword" name="confirmpassword" required >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="Role">Role:</label>
+                        </td>
+                        <td>
+                            <select id="Role" name="Role" required>
+                                <option value="">--Select One--</option>
+                                <option value="Administrator">Administrator</option>
+                                <option value="NormalUser">Normal User</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="SecurityQuesition">Security Question:</label>
+                        </td>
+                        <td>
+                            <select id="SecurityQuesition" name="SecurityQuesition" required>
+                                <option value="">--Select One--</option>
+                                <option value="WhatisYourFatherName">What is Your Father Name</option>
+                                <option value="WhatisYourMotherName">What is Your Mother Name</option>
+                                <option value="WhatisYourLastName">What is Your Last Name</option>
+                                <option value="WhatisYourPetName">What is Your Pet Name</option>
+                                <option value="WhatisYourSchoolName">What is Your School Name</option>
+                                <option value="WhatisYourDegree">What is Your Degree</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="SecurityAnswer">Security Answer:</label>
+                        </td>
+                        <td>
+                            <input type="text" id="SecurityAnswer" name="SecurityAnswer" required autocomplete="off">
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="SecurityPin">Security Pin</label>
+                        </td>
+                        <td>
+                            <input type="password" id="SecurityPin" name="SecurityPin" required autocomplete="off">
+                         
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan=2>
+                            <div class="button-field">
+                                <button type="submit" id="SignUp" class="hover-opacity" >Sign Up</button>
+                                <button type="button" id="Clear" class="hover-opacity">Clear</button>
+                                <button type="button" id="Back" class="hover-opacity">Back</button>
+                            </div>
+                        </td>
+                        
+                    </tr>
+                </table>           
+            </form>
+        </main>
+        <footer> <small>&copy; "Lwin Moe Oo/8958078 &nbsp;&nbsp;&nbsp;&nbsp;     Picture Credit to Pixa Bay: <a herf="https://pixabay.com/">https://pixabay.com/</a></small></footer>
+         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/Register.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

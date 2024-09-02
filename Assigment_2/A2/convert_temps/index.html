@@ -1,0 +1,70 @@
+<!--
+	Assignment 2 Part 3: Develop the Temperature Converter
+
+	In this assignment, you’ll use radio buttons to determine 
+	whether the conversion is from Fahrenheit to Celsius or 
+	vice versa. You’ll also modify the DOM so the labels change 
+	when a radio button is clicked, and the page displays 
+	an error message when the user enters invalid data.
+
+	1. Review the content of the starter folder, convert_temp.
+	2. Review how the toCelsius() and toFarhenheit() event handler 
+	functions call the toggleDisplay() helper function and pass 
+	it strings to display. Also note that the toggleDisplay() helper 
+	function and the convertTemp() event handler function are 
+	incomplete.
+
+	*3. Code the toggleDisplay() function so it changes the text 
+	in the labels for the text boxes to the values in the parameters 
+	that it receives. It should also clear the disabled text box 
+	where the computed temperature is displayed.
+	*4. Code the convertTemp() function without any data validation. 
+	It should use the helper functions to calculate the temperature 
+	based on which radio button is checked. The value returned 
+	by the helper functions should be rounded to zero decimal places.
+	*5. Add data validation to the convertTemp() function. 
+	If the entry is not a valid number, a validation message 
+	should be displayed in the element with the id of “message”.
+	*6. Add any finishing touches to the application whenever 
+	that’s appropriate.
+	*7. In index.html, change the text in the <small> tag 
+	to your name and student number.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Convert Temperatures</title>
+   	<link rel="stylesheet" href="convert_temp.css">
+</head>
+
+<body>
+	<main>
+		<h1>Convert temperatures</h1> 
+		<div>
+			<input type="radio" name="conversion_type" id="to_celsius" checked>Fahrenheit to Celsius
+		</div>
+		<div>
+			<input type="radio" name="conversion_type" id="to_fahrenheit">Celsius to Fahrenheit
+		</div>
+		<div>
+			<label id="degree_label_1">Enter F degrees:</label>
+			<input type="text" id="degrees_entered">
+		</div>
+		<div>
+			<label id="degree_label_2">Degrees Celsius:</label>
+			<input type="text" id="degrees_computed" disabled>
+		</div>
+		<div>
+			<label></label>
+			<input type="button" id="convert" value="Convert" />
+		</div> 
+		<div>
+			<span id="message"></span>
+		</div>
+	</main>
+	<small>&copy; "YourName/Student Number Here" 2024</small>
+	<script src="convert_temp.js"></script>
+</body>
+</html>

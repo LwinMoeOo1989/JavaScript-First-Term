@@ -1,0 +1,65 @@
+<!--
+    Assignment 3 Part 2: Add a stopwatch to the Clock application
+
+    In this assignment, you’ll add a stopwatch feature to the application 
+    you created in the previous assignment. The stopwatch will display 
+    elapsed minutes, seconds, and milliseconds.
+
+    1. Review the content of the starter folder, clock_stopwatch.
+    2. In the JavaScript file, note the $(), displayCurrentTime(), 
+    padSingleDigit(), and DOMContentLoaded event handler functions 
+    from the Clock application. In addition, note the global variables 
+    and starting code for the tickStopwatch(), startStopwatch(), 
+    stopStopwatch(), and resetStopwatch() functions.
+
+    *3. In the tickStopwatch() function, add code that adds 15 milliseconds 
+    to the elapsedMilliseconds variable and then adjusts the elapsedMinutes 
+    and elapsedSeconds variables accordingly. Then, add code that displays 
+    the result in the appropriate span tags in the page.
+    *4. In the startStopwatch() function, add code that starts the stopwatch. 
+    Be sure to cancel the default action of the link too.
+    *5. In the stopStopwatch() and resetStopwatch() functions, add code 
+    that stops the stopwatch. Also, in the resetStopwatch() function, 
+    reset the elapsed time and the page display. Be sure to cancel the 
+    default action of the links too.
+    *6. In the DOMContentLoaded event handler, attach the stopwatch event 
+    handlers to the appropriate links.
+    *7. In index.html, change the text in the <small> tag to your name 
+    and student number.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Clock</title>
+    <link rel="stylesheet" href="clock.css">
+</head>
+<body>
+    <main>
+        <h1>Digital clock with stopwatch</h1>
+        <fieldset>
+            <legend>Clock</legend>
+            <span id="hours"></span>:
+            <span id="minutes"></span>:
+            <span id="seconds"></span>
+            <span id="ampm"></span>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Stop Watch</legend>
+            <a href="#" id="start">Start</a>
+            <a href="#" id="stop">Stop</a>
+            <a href="#" id="reset">Reset</a>
+            <span id="stopwatch-minutes">00</span>:
+            <span id="stopwatch-seconds">00</span>:
+            <span id="stopwatch-milliseconds">000</span>
+        </fieldset>
+    </main>
+    <small>&copy; "Lwin Moe Oo/8958078" 2024</small><!--7. My name -->
+    <script src="clock.js"></script>
+</body>
+</html>
+
+
+

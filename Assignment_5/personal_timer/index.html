@@ -1,0 +1,63 @@
+<!--
+	Assignment 5 Part 1: Create a Progressbar widget that uses a timer
+	
+	In this assignment, you’ll modify an application that uses a timer to display the elapsed 
+	minutes and seconds in a text box so it displays the elapsed time in a Progressbar widget.
+
+	1. Review the content of the starter folder, personal_timer.
+	2. When you enter a total time and interval and click the Start Timer button, note that 
+	the elapsed minutes and seconds are displayed in a text box and are updated each time the 
+	interval passes.
+	3. Go to the jQuery UI website at https://jqueryui.com, and display the documentation for 
+	the Progressbar widget. Review the code for one or more of the examples, then review the 
+	API documentation. 
+	
+	*4. Modify the HTML for the application so it uses a Progressbar widget to display the 
+	elapsed time instead of a text box. Be sure to give the widget an id of “progressbar” so 
+	the CSS for the application works correctly.
+	*5. Add a statement to the JavaScript file that activates the widget with a starting 
+	value of 0. 
+	*6. Modify the code that’s executed if the two entries are valid, so it uses the widget. 
+		*6a. When you do that, you can delete the code that calculates and displays the elapsed minutes 
+		and seconds since it’s no longer needed.
+		*6b. Then, you can add code that calculates and changes the value of the Progressbar widget.
+	*7. In index.html, change the text in the <small> tag to your name and student number.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Personal timer</title>
+    <link rel="stylesheet" href="./css/jquery-ui.min.css">    
+    <link rel="stylesheet" href="timer.css">
+</head>
+<body>
+	<main>
+		<h1>Personal Timer</h1>
+        <h2>Please enter the total time and interval for the timer in seconds</h2>
+	    <label for="time">Total time:</label>
+	    <input type="text" id="time">
+	    <span id="time_error">*</span><br>
+        <label for="interval">Interval:</label>
+	    <input type="text" id="interval">
+	    <span id="interval_error">*</span><br>
+        <label>&nbsp;</label>
+        <input type="button" id="start_timer" value="Start Timer">
+		<input type="reset" id="reset" value="Reset" class="btn" /><br /><br />	
+		<label>Elapsed time:</label> 
+        <input type="text" id="elapsed" disabled>
+        <div id="complete">
+ 			<span></span>       	
+        </div>	
+		<div id="stName">
+			<small>&copy; "YourName/Student Number Here" 2024</small>
+		</div>
+	</main>
+	
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+	<script src="timer.js"></script>
+</body>
+</html>
+

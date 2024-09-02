@@ -1,0 +1,47 @@
+<!--
+    Assignment 2 Part 1: Use function declarations with the Test Scores application
+
+    In this assignment, you’ll modify a version of the Test Scores 
+    application so it uses function declarations instead of function expressions. 
+    You’ll also use an anonymous function for the DOMContentLoaded event handler.
+
+    1. Review the content of the starter folder, test_scores.
+    2. Run the application and add two or more scores to see that 
+    the new average is displayed each time another score is added.
+    3. Review the code in the JavaScript file and note that all of 
+    the functions are written as function expressions.
+
+    *4. Modify the $(), addScore(), and calculateAverage() functions 
+    so they use function declarations instead of function expressions.
+    *5. Modify the document.addEventListener() method so it uses 
+    an anonymous function for the event handler instead of the 
+    processDOM() function.
+    *6. In index.html, change the text in the <small> tag to your 
+    name and student number.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Test Scores App</title>
+    <link rel="stylesheet" href="test_scores.css">
+</head>
+<body>
+    <main>
+        <h1>The Test Scores App</h1>
+        <div>
+            <label for="score">Score:</label>
+            <input type="text" id="score">
+            <input type="button" id="add" value="Add">
+        </div>
+        <div>
+            <label for="average">Average:</label>
+            <input type="text" id="average" disabled>
+        </div>
+    </main>
+    <small>&copy; "YourName/Student Number Here" 2024</small>
+    <script src="test_scores.js"></script>   
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!--
+ Assignment 4 Part 1: Create a FAQs Rollover application
+
+ In this assignment, you’ll write the jQuery code for an application that displays 
+ the answer to a question in a list of questions when the user hovers the mouse over 
+ that question.
+
+ 1. Review the content of the starter folder, faqs_rollover.
+ 2. Review the HTML to see that it includes an unordered list with list items that consist 
+ of an h2 element and a <p> element. The h2 element contains a question, and the <p> element, 
+ which is hidden, contains the answer to the question.
+
+ *3. Add jQuery code that runs when the user moves the mouse pointer into or out of a 
+ question in the list. When the mouse pointer moves into the question, the answer should 
+ be displayed. When the mouse pointer moves out of the question, the answer should be hidden.
+ *4. In index.html, change the text in the <small> tag to your name and student number.
+-->
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>Q&A Rollovers</title>
+ <link rel="stylesheet" href="main.css">
+</head>
+ 
+<body>
+ <main>
+  <h1>jQuery FAQs</h1>
+  <ul id="rollovers">
+      <li>
+    <h2>What is jQuery?</h2>
+       <p class="hidden">jQuery is a library of the JavaScript functions 
+       that you're most likely to need as you develop websites.</p>
+      </li>
+      <li>
+    <h2>Why is jQuery becoming so popular?</h2>
+       <p class="hidden">Three reasons: It's free; It lets you get more done 
+       in less time; All of its functions are cross-browser compatible.</p>
+      </li>
+      <li>
+    <h2>Which is harder to learn: jQuery or JavaScript?</h2>
+       <p class="hidden">For most functions, jQuery is much simpler to learn 
+       and use than JavaScript. But remember that jQuery is JavaScript.</p>
+      </li>
+     </ul>        
+ </main>
+ <small>&copy; "Lwin Moe Oo/8958078" 2024</small><!--4) My Name -->
+ <script src="http://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="rollover.js"></script></body>
+</html>
+

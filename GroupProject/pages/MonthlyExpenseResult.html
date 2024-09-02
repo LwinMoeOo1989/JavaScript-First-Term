@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Expense Comparison</title>
+    <link rel="stylesheet" href="../css/Global.css">
+    <link rel="stylesheet" href="../css/MonthlyExpenseResult.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="icon" type="image/png" href="../resource/images/Logo_3.png">
+</head>
+<body>
+    <header>
+        <img id="logo" src="../resource/images/Logo_3.png" alt="logo">
+        <h1>Budget Buddy</h1>
+        <nav>
+            <ul class="nav">
+                <li><a href="./Home.html">Home</a></li>
+                <li><a href="./About.html">About Us</a></li>
+                <li><a href="./Contact_Us.html">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+<br><br>
+    <main>
+        <div class="ds_container">
+            <h1>Monthly Expense Comparison Graphs</h1>
+            <div>
+                <label for="graphType">Select Graph Type and Click on Update:</label>
+                <select id="graphType">
+                    <option value="bar">Bar Graph</option>
+                    <option value="line">Line Graph</option>
+                    <option value="pie">Pie Chart</option>
+                </select>
+            <button id="ds_updateGraph">Update Graph</button>
+            </div>
+            <canvas id="ds_expense_charts"></canvas>
+        </div>
+    </main>
+
+    <footer>
+        <small>&copy;"DikshaSmotra/8977073 &nbsp;&nbsp;&nbsp;&nbsp;</small>
+    </footer>
+
+    <script src="../js/MonthlyExpenseResult.js"></script>
+</body>
+</html>

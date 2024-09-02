@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+NSW:wght@100..400&family=Playwrite+DE+Grund:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+PL:wght@100..400&display=swap');
+
+body{
+    font-family: "Roboto", "Playwrite DE Grund";
+     margin: 35% 2% 20% 5%;
+     background: #FFDAB9;
+}
+header {
+    position: fixed;
+    top:0;
+    left: 0;
+    padding: 10px;
+    width: 100%;
+    overflow: auto;
+    height: 15%;
+    background-color: #6F341B; 
+    border:2px solid black; 
+}
+
+header img{
+    height:100%;
+}
+
+header h1{
+    font-weight: bold;
+    float: right;
+    padding-right: 15em;
+    padding-top:0.4em;
+    color: #FFFFFF;
+}
+.long-container{
+    width:400px;
+    margin:0 auto;
+    padding: 70px;
+    border: 1px solid #ccc;
+    border-radius:5px;
+    background-color: #f9f9f9;
+    
+}
+
+#LoginForm{
+    display:flex;
+    flex-direction:column;
+    width:300px;
+    border-style: solid;
+    border-radius:20px;
+}
+
+h2{
+    text-align: center;
+}
+
+.form-row{
+    display:grid;
+    grid-template-columns: 80px 250px;
+    margin-bottom:15px;
+    
+}
+
+.form-row label{
+    width: 70px;
+}
+
+#email, #Password{
+width:200px;
+padding:5px;
+
+ margin: 5px 0;
+ border: 1px solid #ccc;
+ border-radius: 5px;
+ box-sizing: border-box;
+}
+
+.button-field {
+    grid-column: span 2;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding-top: 10px;
+    padding-right:10px;
+}
+
+.Linkfield{
+    padding-top:10px;
+    text-align:center;
+}
+
+#SignUp{
+    margin-left:10px;
+}
+
+
+#LoginButton,#SignUp{
+    padding:10px 20px;
+    border:none;
+    border-radius: 4px;
+    background-color:#6F341B;
+    color:#fff;
+    cursor:pointer;
+    width:6em;
+}
+
+footer {
+    font-weight:bold;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+     background: #FFDAB9;
+    border-top: 1px solid #ccc;
+    width: 100%;
+    text-align: left;
+}
+
+
+.mainbody {
+    display: flex;
+    margin-top: 15%;
+}
+
+tr{
+    height: 50px;
+}
+
+aside {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+aside img {
+    max-width: 400px;
+    height: 100%;
+    margin: 2px solid black;
+    border-radius:20px;
+}
+
+main {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+#sides{
+    display:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

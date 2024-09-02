@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Budget Buddy</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+    <script src="../js/DailyExpenseResult.js"></script>
+    <link rel="stylesheet" href="../css/Global.css">
+    <link rel="stylesheet" href="../css/DailyExpenseResult.css">
+    <link rel="icon" type="image/png" href="../resource/images/Logo_3.png">
+</head>
+<body>
+    <main>
+        <header>
+            <img id="logo" src="../resource/images/Logo_3.png" alt="logo">
+            <h1>Budget Buddy</h1>
+            <nav>
+                <ul class="nav">
+                    <li><a href="./Home.html">Home</a></li>
+                    <li><a href="./MonthlyExpenseResult.html">Check Monthly Expense</a></li>
+                    <li><a href="./About.html">About Us</a></li>
+                    <li><a href="./Contact_Us.html">Contact us</a></li>
+                </ul>
+            </nav>
+        </header>
+    <ul id="sortable">
+        <li class="ui-state-default"><div class="categories">Categories: Food</div><div id="outputFood"></div></li>
+        <li class="ui-state-default"><div class="categories">Categories: Transportation</div><div id="outputTransportation"></div></li>
+        <li class="ui-state-default"><div class="categories">Categories: Utilities</div><div id="outputUtilities"></div></li>
+        <li class="ui-state-default"><div class="categories">Categories: Saving</div><div id="outputSaving"></div></li>
+        <li class="ui-state-default"><div class="categories">Categories: Debt Payment</div><div id="outputDebt"></div></li>
+        <li class="ui-state-default"><div class="categories">Categories: Health</div><div id="outputHealth"></div></li>
+        <li class="ui-state-default"><div class="categories">Categories: Miscellaneous</div><div id="outputMiscellaneous"></div></li>
+    </ul>
+    <div class="pie"><canvas id="pieChart" ></canvas></div>
+
+    </main>
+    <footer>     <small>&copy; "Lwin Moe Oo/8958078 &nbsp;&nbsp;&nbsp;&nbsp;    Picture Credit to Pixa Bay: <a herf="https://pixabay.com/">https://pixabay.com/</a></small></footer>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!--
+ Assignment 4 Part 2: Develop an Image Gallery application with animation
+
+ In this assignment, you’ll develop an Image Gallery application that displays different 
+ images when the user clicks on the links at the top of the page. This works like the 
+ Image Swap application. You’ll then use effects to change the way the images are 
+ displayed and hidden.
+
+ 1. Review the content of the starter folder, image_gallery.
+
+ *2. In the JavaScript file, add an event handler for the ready() event method.
+ *3. Use the each() method to run a function for each <a> element in the unordered list 
+ of items. Then, add jQuery code that gets the URL and caption for each image and preloads 
+ the image. You can get the URL from the href attribute of the <a> element, and you can 
+ get the caption from the title attribute.
+ *4. Add an event handler for the click() event method of each link. The function for 
+ this event handler should accept a parameter named event. The jQuery code for this event 
+ handler should display the image and caption for the link that was clicked. In addition, 
+ it should use the event parameter to cancel the default action of the link.
+ *5. Add a jQuery statement that moves the focus to the first link on the page when 
+ the page is loaded.
+ *6. Modify the jQuery so that when a link is clicked, the current caption and image 
+ are hidden using a sliding motion that takes three seconds.
+ *7. Modify the jQuery so that after the caption and URL are set for the new image, 
+ that caption and image are displayed using a sliding motion that takes three seconds.
+ *8. In index.html, change the text in the <small> tag to your name and student number.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="image_gallery.css">
+</head>
+<body>
+    <main>
+        <h1>Image Gallery</h1>
+        <ul id="image_links">
+            <li><a href="images/casting1.jpg" title="Casting on the Upper Kings">Upper Kings</a></li>
+            <li><a href="images/casting2.jpg" title="Casting on the Lower Kings">Lower Kings</a></li>
+            <li><a href="images/catchrelease.jpg" title="Catch and Release on the Big Horn">Big Horn</a></li>
+            <li><a href="images/fish.jpg" title="Catching on the South Fork">South Fork</a></li>
+            <li><a href="images/lures.jpg" title="The Lures for Catching">Lures</a></li>
+        </ul>
+        <h2 id="caption">Casting on the Upper Kings</h2>
+        <p id="gallery">
+            <img src="images/casting1.jpg" alt="Image Gallery area" id="image">
+        </p>
+    </main>
+    <small>&copy; Lwin Moe Oo/8958078 2024</small> <!-- Your name and student number -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="image_gallery_2.js"></script>
+</body>
+</html>

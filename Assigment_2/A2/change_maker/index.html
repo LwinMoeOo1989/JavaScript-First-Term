@@ -1,0 +1,70 @@
+<!--
+	Assignment 2 Part 2: Develop the Change Calculator
+
+	In this assignment, you’ll develop an application that 
+	tells how many quarters, dimes, nickels, and pennies are needed 
+	to make change for any amount of change from 0 through 99 cents. 
+	One way to get the results is to use the divide and modulus 
+	operators along with the parseInt() method for truncating 
+	the results so they are whole numbers.
+
+	1. Review the content of the starter folder, change_maker.
+	Then, run the application to see the user interface, 
+	although that interface won’t do anything until you develop 
+	the JavaScript for it.
+	
+	*2. Code an event handler named validateInput() that gets 
+	the user’s input and checks to make sure that it is a number 
+	between 0 and 99.
+	*3. If so, call a function named createChange() and pass it 
+	the user’s input. Otherwise, display a dialog box 
+	for the error.
+	*4. Code the createChange() function, which should have one 
+	parameter that accepts the user’s input. This function shouldn’t 
+	return anything, but it should display the results in the text 
+	boxes for Quarters, Dimes, Nickels, and Pennies.
+	*5. Code a DOMContentLoaded event handler that attaches 
+	the validateInput() event handler to the click event of 
+	the Make Change button. Then, test this application.
+	*6.	In index.html, change the text in the <small> tag 
+	to your name and student number. 
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Make Change</title>
+   	<link rel="stylesheet" href="make_change.css">
+</head>
+
+<body>
+	<main>
+		<h1>Change Calculator</h1>
+
+		<label>Enter amount of change due (0-99):</label>
+		<div>
+			<input type="text" id="cents" />
+			<input type="button" value="Calculate" name="calculate" id="calculate" />
+		</div>
+		<div>
+			<label>Quarters:</label>
+			<input type="text" id="quarters" disabled>
+		</div>
+		<div>
+			<label>Dimes:</label>
+			<input type="text" id="dimes" disabled>
+		</div>
+		<div>
+			<label>Nickels:</label>
+			<input type="text" id="nickels" disabled>
+		</div>
+		<div>
+			<label>Pennies:</label>
+			<input type="text" id="pennies" disabled>
+		</div>
+	</main>
+	<small>&copy; "YourName/Student Number Here" 2024</small>
+	<script src="make_change2.js"></script>
+</body>
+</html>

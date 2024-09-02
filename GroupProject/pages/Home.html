@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Buddy</title>
+
+    <!-- Importing Google font 'Chewy' -->
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+
+    <!-- Linking the global CSS file for common styles across the website. -->
+    <link rel="stylesheet" href="../css/Global.css">
+
+    <!-- Linking the CSS file specific to the home page -->
+    <link rel="stylesheet" href="../css/Home.css">
+
+    <!-- Setting the favicon for the website -->
+    <link rel="icon" type="image/png" href="../resource/images/Logo_3.png">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+</head>
+<body>
+    <!-- Header section containing logo and navigation menu -->
+    <header>
+        <!-- This is the logo of the webiste. -->
+        <img id="logo" src="../resource/images/Logo_3.png" alt="logo">
+        <h1>Budget Buddy</h1>
+        <!-- Navigation menu START-->
+        <nav>
+            <ul class="nav">
+                <li><a href="./Home.html">Home</a></li>
+                <li><a href="./MonthlyExpenseResult.html">Check Monthly Expense</a></li>
+                <li><a href="./About.html">About Us</a></li>
+                <li><a href="./Contact_Us.html">Contact us</a></li>
+            </ul>
+        </nav>
+        <!-- Navigation menu END-->
+    </header>
+
+    <!-- Main section with background video,text and call-to-action buttons -->
+    <main>
+        <div class="main">
+
+            <!-- Background video that plays in a loop with no sound -->
+            <video src="../resource/video/background.mp4" autoplay loop muted></video>
+
+            <!-- Container for main content,piechart and buttons -->
+            <div class="main-text-container">
+                <p>
+                    You can add your expenses and track them down using our budget buddy.<br><br>
+                    Please login to update your expenses.
+                </p>
+
+                <!-- START. Sign Up and signin button for new users  -->
+                <button class="cta-button-login-button" id="Signup-btn">Sign Up</button>
+                <button class="cta-button-login-button" id="signin-btn">Sign In</button>
+                <!-- END. Sign Up and signin button for new users  -->
+
+                <!-- START. add, expected expenses and sign out buttons for logged in users -->
+                <button class="cta-button" id="Daily_Expense">Add Expenses</button>
+                <button class="cta-button" id="Expected_Expense">Add Expected Expense</button>
+                <button class="cta-button" id="signout-btn">Sign Out</button>
+                <!-- END. add, expected expenses and sign out buttons for logged in users -->
+
+                <!--This is to show Piechart.-->
+                <div class="dough"><canvas id="pieChart" ></canvas></div>
+            </div>
+        <div>  
+    </main>
+
+    <!-- Footer section with student name and number  -->
+    <footer class="foot">
+        &copy;Mamidi Nithin Sai Kumar/9002544 "2024"
+    </footer>
+    <script src="../js/Home.js"></script>
+</body>
+</html>

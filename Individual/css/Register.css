@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+NSW:wght@100..400&family=Playwrite+DE+Grund:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+PL:wght@100..400&display=swap');
+
+
+body{
+    font-family: "Roboto", "Playwrite DE Grund";
+    margin: 20% 2% 5% 22%;
+    background: #FFDAB9;
+    font-weight:bold;
+}
+
+header {
+    position: fixed;
+    top:0;
+    left: 0;
+    padding: 10px;
+    width: 100%;
+    overflow: auto;
+    height: 15%;
+    background-color: #6F341B; 
+    border:2px solid black; 
+}
+
+header img{
+    height:100%;
+}
+
+header h1{
+    font-weight: bold;
+    padding-right: 15em;
+    padding-top:0.4em;
+    float: right;
+    color: #FFFFFF;
+}
+
+
+
+main{
+    width:500px;
+    padding:7% auto;
+    padding-bottom:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+    border-radius:30px;
+    margin-top:20%;
+}
+
+h2{
+    text-align:center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px #6F341B;
+}
+form {
+    border: 3px solid black;
+    padding: 10px;
+    border-radius:30px;
+    background-color:white;
+}
+
+.radio-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    align-items:center;
+}
+
+.radio-container label{
+    text-align:left;
+    padding-right:0;
+}
+
+.password-container{
+    display:grid;
+    grid-template-columns: 1fr 100px;
+}
+
+label{
+    text-align:right;
+    padding-right:10px;
+}
+
+#username, #DOB, #Email, #PhoneNo, #SecurityQuesition, #SecurityAnswer, #SecurityPin,#confirmpassword, #Role{
+    width:70%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius:4px;
+}
+
+#password{
+    width:70%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius:4px;
+}
+
+
+.button-field {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    padding-top: 10px;
+}
+
+#SignUp,#Back,#Clear{
+    width: 150px;
+    padding: 10px 20px  ;
+    border:none;
+    border-radius:4px;
+    background-color:#6F341B;
+    color:#fff;
+    cursor:pointer;
+    
+}
+
+#generatePassword{
+    width: 100px;
+    border:none;
+    border-radius:4px;
+    background-color:#6F341B;
+    color:#fff;
+    cursor:pointer;
+    
+}
+
+
+footer {
+    font-weight:bold;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+     background: #FFDAB9;
+    border-top: 1px solid #ccc;
+    width: 100%;
+    text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

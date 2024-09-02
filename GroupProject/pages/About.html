@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Buddy</title>
+    <!-- Preconnecting to Google's font server to optimize loading time -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Importing Google font 'Chewy' -->
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+
+    <!-- Linking the global CSS file for common styles across the website. -->
+    <link rel="stylesheet" href="../css/Global.css">
+
+    <!-- Linking the CSS file specific to the about page -->
+    <link rel="stylesheet" href="../css/About.css">
+
+    <!-- Setting the favicon for the website -->
+    <link rel="icon" type="image/png" href="../resource/images/Logo_3.png">
+</head>
+<body>
+    <!-- Header section containing logo and navigation menu -->
+    <header>
+        <!-- This is the logo of the webiste. -->
+        <img id="logo" src="../resource/images/Logo_3.png" alt="logo">
+        <h1>Budget Buddy</h1>
+
+        <!-- Navigation menu START-->
+        <nav>
+            <ul class="nav">
+                <li><a href="./Home.html">Home</a></li>
+                <li><a href="./About.html">About Us</a></li>
+                <li><a href="./Contact_Us.html">Contact us</a></li>
+            </ul>
+        </nav>
+        <!-- Navigation menu END-->
+    </header>
+    <main>
+        <!--********START.*************
+        First Section for FAQ and Accordion styles-->
+        <section>
+            <h2>About Us.</h2>
+
+            <!--********START.*************
+            FAQ-style section-->
+            <h3 class="main-faq">What We Offer. click here to see.!</h3>
+            <h3 class="faq">&#8596; Budgeting Tools &#8595;</h3>
+            <h4 class="faq-answer">Our budgeting tools are designed to help you plan 
+                and manage your finances with ease. Whether you are creating a monthly budget, tracking your spending, or setting savings goals, Budget Buddy provides the tools you need to stay on track and achieve your financial goals.
+            </h4>
+
+            <h3 class="faq">&#8596; Expense Tracking &#8595;</h3>
+            <h4 class="faq-answer">Tracking your expenses has never been easier. With 
+                Budget Buddy, you can quickly and easily log your daily expenditures, categorize them, and analyze your spending habits. This insight helps you identify areas where you can save money and make more informed financial decisions.
+            </h4>
+
+            <h3 class="faq">&#8596; User Privacy and Security &#8595;</h3>
+            <h4 class="faq-answer">We take your privacy and security seriously. All of 
+                your data is encrypted and stored securely, and we never share your personal information with third parties. You can use Budget Buddy with confidence, knowing that your financial data is safe and protected.
+            </h4>
+            <!--********END.*************
+            FAQ-style section-->
+
+            <!--********START.*************
+            Accordion-style section-->
+            <div id="accordion">
+                <h3>Our Mission</h3>
+                <div>
+                    <p>
+                        At Budget Buddy, our mission is simple: to empower individuals and families with the tools they need to take control of their finances. We believe that effective budgeting and expense tracking should be accessible to everyone, regardless of financial background. By providing a user-friendly platform, we aim to help you manage your expenses effortlessly and achieve your financial goals.     
+                    </p>
+                </div>
+                <h3>Our Vision</h3>
+                <div>
+                    <p>
+                        We envision a world where everyone has the confidence and knowledge to manage their finances wisely. Our goal is to create a seamless and intuitive experience that transforms the way people think about budgeting. We strive to build a community of users who not only track their expenses but also feel empowered to make informed financial decisions. Through continuous innovation, we aim to make financial management as straightforward and stress-free as possible.
+                    </p>
+                </div>
+                <h3>Our Team</h3>
+                <div>
+                    <p>
+                        Behind Budget Buddy is a dedicated team of passionate professionals who are committed to making financial management accessible to all. Our team brings together expertise in finance, technology, and customer service to deliver a product that truly meets the needs of our users. We are driven by the belief that everyone deserves to feel confident about their financial future, and we work tirelessly to support you on your journey to financial well-being.
+                    </p>
+                    </div>
+            </div>
+            <!-- ********END.*************
+            Accordion-style section-->
+        </section>
+        <!--********END.*************
+        First Section for FAQ and Accordion styles-->
+
+        <!--********START.************* 
+        Slideshow section with a 4-second timer -->
+        <section class="offer">
+            <h1>This is a slideshow photo along with caption with 4 seconds timer.</h1>
+            <div class="slide-container">
+                <div class="slide">
+                    <img src="../resource/images/socialmedia.jpg" alt="We are in social media" class="offer-image">
+                    <p class="caption">We are in social media</p>
+                </div>
+                <div class="slide">
+                    <img src="../resource/images/map.jpg" alt="We are all around the globe" class="offer-image">
+                    <p class="caption">We are all around the globe</p>
+                </div>
+                <div class="slide">
+                    <img src="../resource/images/app.jpg" alt="We have an application" class="offer-image">
+                    <p class="caption">We have an application</p>
+                </div>
+            </div>
+        </section>
+        <!--********END.*************
+        Slideshow section with a 4-second timer -->
+
+        <!--This is a placeholder for captions.-->
+        <div id="caption-dialog"></div>
+    </main>
+
+    <!-- Footer section with student name and number  -->
+    <footer>
+        &copy;Mamidi Nithin Sai Kumar/9002544 "2024"
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <script src="../js/About.js"></script>
+</body>
+</html>

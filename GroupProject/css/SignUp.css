@@ -1,0 +1,82 @@
+body{
+    overflow-x: hidden;
+}
+
+main{
+    margin-top:130px;
+    margin-bottom:10px;
+}
+form {
+    border: 3px solid black;
+    border-radius:30px;
+    background-color: white;
+    width: 500px;
+    margin-left: 35%;
+
+}
+#form_heading
+{
+    text-align: center;
+}
+
+.FormField{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+}
+
+.buttonfield {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.buttonfield #SignUp #Clear{
+    padding:10px 20px ;
+    border:none;
+    border-radius: 4px;
+    cursor:pointer;
+    width: 100px;
+    font-weight: bold;
+}
+
+.buttonfield #Clear{
+    background-color:#c2d3dd;
+    color:#2D3E50;
+}
+
+.buttonfield #SignUp{
+    background-color:#c2d3dd;
+    color:#2D3E50;
+
+}
+
+input[type="email"],
+input[type="text"],
+input[type="password"],
+#SecurityQuesition{
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+label{
+    padding-top:15px;
+}
+
+#SecurityQuestionField,
+#SecurityAnswerField,
+#pinInputClass{
+    font-weight:bold;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    background: #FFCB85;
+    border-top: 1px solid #ccc;
+    width: 100%;
+    text-align: left;
+    color: #2D3E50;
+}
